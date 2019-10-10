@@ -1,0 +1,20 @@
+:prewrap!: # see https://asciidoctor.org/docs/user-manual/#to-wrap-or-to-scroll
+
+:doctype: book
+:icons: font
+
+:source-highlighter: highlight.js
+:highlightjsdir: {gradle-relative-srcdir}/highlight/
+:stylesdir: {gradle-relative-srcdir}/
+
+:toc: left
+:toclevels: 4
+:sectlinks:
+:sectanchors:
+:docinfo:
+:nofooter:
+
+
+= A
+
+Stuff

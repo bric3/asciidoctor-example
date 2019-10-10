@@ -1,0 +1,6 @@
+/* Text and background color for light mode */
+@import "github.min.css" (prefers-color-scheme: light);
+
+/* Text and background color for dark mode */
+@import "gruvbox-dark.min.css" (prefers-color-scheme: dark);
+

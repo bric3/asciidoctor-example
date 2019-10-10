@@ -1,0 +1,30 @@
+:doctype: book
+:icons: font
+:source-highlighter: highlight.js
+////
+Note the ending slashes,
+
+- none on `highlightjsdir` attribute value, because asciidoctor appends the slash
+- ending slash on `stylesdir` because asciidoctor does not appends a slash,
+which results in not finding the css.
+////
+:highlightjsdir: {gradle-relative-srcdir}/highlight
+:stylesdir: {gradle-relative-srcdir}/
+:toc: preamble
+:docinfo:
+:nofooter:
+
+
+:description: Nested docs
+
+
+
+= Notes
+Bric3;
+
+
+.Developer's notes
+- xref:./a.adoc[A]
+- xref:./b.adoc[B]
+
+

@@ -1,0 +1,5 @@
+/* Text and background color for light mode */
+@import "asciidoctor.css";
+
+/* Text and background color for dark mode */
+@import "asciidark.css" (prefers-color-scheme: dark);
