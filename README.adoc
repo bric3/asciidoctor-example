@@ -1,0 +1,35 @@
+= Advanced asciidoctor with gradle example
+
+Links and discussion that helped me
+
+.docs and blogs
+- https://asciidoctor.org/docs/user-manual[Asciidoctor manual]
+- https://asciidoctor.github.io/asciidoctor-gradle-plugin/development-2.0/
+- https://mrhaki.blogspot.com/2014/06/awesome-asciidoc-use-inline-icons.html[Awesome Asciidoctor: Use Inline Icons]
+- https://plantuml-documentation.readthedocs.io/en/latest/formatting/html.html[PlantUML Doc 0.2.01 documentation]
+- https://bcouetil.gitlab.io/academy/BP-asciidoc.html[AsciiDoc & doc-as-code Best Practices]
+- https://paulmillr.com/posts/using-dark-mode-in-css/[Auto dark mode in CSS]
+- https://github.com/asciidoctor/asciidoctorj/tree/master/asciidoctorj-documentation/src/test/java/org/asciidoctor/integrationguide[highlight.js integration guide]
+- https://github.com/highlightjs[highlight.js]
+- https://asciidoctor.org/docs/produce-custom-themes-using-asciidoctor-stylesheet-factory/[Produce Custom Themes Using the Asciidoctor Stylesheet Factory]
+- https://mrhaki.blogspot.com/2014/08/awesome-asciidoc-changing-highlightjs.html[Changing Highlight.js Theme]
+
+
+.git repository
+- https://github.com/asciidoctor/asciidoctor-gradle-plugin
+- https://github.com/asciidoctor/asciidoctor-gradle-plugin/issues/400[Removing module access warning post Java 9]
+- https://github.com/asciidoctor/asciidoctor-gradle-plugin/issues/292[Provide access to the sourceDir value as attribute]
+- https://github.com/asciidoctor/asciidoctorj/blob/7344d38/asciidoctorj-api/src/main/java/org/asciidoctor/Attributes.java[Asciidoctor attributes]
+- https://github.com/asciidoctor/asciidoctor-diagram[Asciidoctor diagram]
+- https://github.com/asciidoctor/asciidoctor-gradle-plugin/issues/319[Tracking AsciidoctorJ 2.0.0 integration]
+
+.challenges
+- https://jnorthr.wordpress.com/2014/06/22/asciidoctor-admonition-icons-missing/[Asciidoctor Admonition Icons Missing]
+> Actually, it’s even simpler than that! Asciidoctor comes integrated with
+> Font Awesome out of the box. You just need to remove the blank line between
+> the document title & the font attribute entry.
+>
+> The font attribute entry must be part of the document header, which is offset
+> from the body by a blank line.
+- https://discuss.asciidoctor.org/Overriding-stylesdir-value-in-per-file-attributes-td6508.html[Overriding stylesdir value in per-file attributes]
+- https://discuss.asciidoctor.org/Single-CSS-for-multiple-nested-adoc-files-td552.html[Single CSS for multiple, nested adoc files]
