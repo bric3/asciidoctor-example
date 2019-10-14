@@ -230,6 +230,31 @@ pre, pre > code {
     opacity: 1;
 }
 
+::-webkit-scrollbar {
+    width:9px;
+    height:9px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-border-radius:5px;
+    border-radius:5px;
+    background:rgba(0,0,0,0.1);
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius:5px;
+    border-radius:5px;
+    background:rgba(172, 133, 47, 0.4);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background:rgba(172, 133, 47, 0.7);
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+    background:rgba(0,0,0,0.05);
+}
+
 /*colors TODO*/
 /*.aqua{color:#00bfbf}*/
 /*.aqua-background{background-color:#00fafa}*/

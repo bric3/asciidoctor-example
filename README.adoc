@@ -13,7 +13,9 @@ Links and discussion that helped me
 - https://github.com/highlightjs[highlight.js]
 - https://asciidoctor.org/docs/produce-custom-themes-using-asciidoctor-stylesheet-factory/[Produce Custom Themes Using the Asciidoctor Stylesheet Factory]
 - https://mrhaki.blogspot.com/2014/08/awesome-asciidoc-changing-highlightjs.html[Changing Highlight.js Theme]
-
+- https://github.com/asciidoctor/asciidoctor/issues/699[collapsible toc]
+- https://mrhaki.blogspot.com/2019/03/awesome-asciidoctor-collapsible-content.html[Collapsible content (asciidoctor 2, need gradle plugin 3.x)]
+- no wrapping
 
 .git repository
 - https://github.com/asciidoctor/asciidoctor-gradle-plugin
