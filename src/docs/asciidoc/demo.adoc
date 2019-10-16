@@ -219,3 +219,12 @@ Here's a reference to the definition of <<another_term>>, in case you forgot it.
 One more thing. Happy documenting!
 
 [[google]]When all else fails, head over to <http://google.com>.
+
+++++
+<details>
+<summary>You made it to the end !</summary>
+
+include::easter.html[]
+
+</summary>
+++++
