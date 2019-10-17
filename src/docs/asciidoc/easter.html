@@ -4,6 +4,7 @@
  * https://codepen.io/buschidos/pen/zxjrLR
  * - fixed typo of `libirint` to `labyrinth`
  * - `.pacman-wrapper` is now position relative, without top / left, without fixed margins
+ * - `#pacman-labyrinth > svg` now uses background-color
  */
 .pacman-wrapper {
   position: relative;
@@ -24,6 +25,7 @@
 #pacman-labyrinth > svg {
   width: 100%;
   height: 100%;
+  background-color: inherit;
 }
 #pacman-labyrinth #borders path {
   stroke-dashoffset: 400;
