@@ -1,5 +1,19 @@
 = Advanced asciidoctor with gradle example
 
+
+This config has a CSS that auto toggles to dark or light them on browsers that honor the
+`prefers-color-scheme: dark` CSS directive.
+
+.Screenshots
+image:dark.png["Dark",width=200,link="dark.png"]
+image:light.png["Light",width=200,link="light.png"]
+
+This configuration is based on HighlightJS which was easier to tweak with the CSS, hence it's
+CSS is also set-up to switch styles accordingly.
+
+
+'''
+
 Links and discussion that helped me
 
 .docs and blogs
@@ -27,6 +41,7 @@ Links and discussion that helped me
 
 .challenges
 - https://jnorthr.wordpress.com/2014/06/22/asciidoctor-admonition-icons-missing/[Asciidoctor Admonition Icons Missing]
++
 > Actually, it’s even simpler than that! Asciidoctor comes integrated with
 > Font Awesome out of the box. You just need to remove the blank line between
 > the document title & the font attribute entry.
