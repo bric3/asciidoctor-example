@@ -38,6 +38,7 @@ Links and discussion that helped me
 - https://github.com/asciidoctor/asciidoctorj/blob/7344d38/asciidoctorj-api/src/main/java/org/asciidoctor/Attributes.java[Asciidoctor attributes]
 - https://github.com/asciidoctor/asciidoctor-diagram[Asciidoctor diagram]
 - https://github.com/asciidoctor/asciidoctor-gradle-plugin/issues/319[Tracking AsciidoctorJ 2.0.0 integration]
+- https://gist.github.com/mojavelinux/4402636[A sample AsciiDoc file for testing Asciidoctor]
 
 .challenges
 - https://jnorthr.wordpress.com/2014/06/22/asciidoctor-admonition-icons-missing/[Asciidoctor Admonition Icons Missing]
