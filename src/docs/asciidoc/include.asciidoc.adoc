@@ -101,6 +101,43 @@ Path: '/some/filez.txt', '.b'
 [red]#red text# [yellow-background]#on yellow#
 [big]#large# [red yellow-background big]*all bold*
 
+
+.colors
+[aqua]#aqua#
+[aqua-background]#aqua-background#
+[black]#black#
+[black-background]#black-background#
+[blue]#blue#
+[blue-background]#blue-background#
+[fuchsia]#fuchsia#
+[fuchsia-background]#fuchsia-background#
+[gray]#gray#
+[gray-background]#gray-background#
+[green]#green#
+[green-background]#green-background#
+[lime]#lime#
+[lime-background]#lime-background#
+[maroon]#maroon#
+[maroon-background]#maroon-background#
+[navy]#navy#
+[navy-background]#navy-background#
+[olive]#olive#
+[olive-background]#olive-background#
+[purple]#purple#
+[purple-background]#purple-background#
+[red]#red#
+[red-background]#red-background#
+[silver]#silver#
+[silver-background]#silver-background#
+[teal]#teal#
+[teal-background]#teal-background#
+[white]#white#
+[white-background]#white-background#
+[yellow]#yellow#
+[yellow-background]#yellow-background#
+
+
+
 Chars: n__i__**b**++m++[red]##r##
 
 Escaped:
