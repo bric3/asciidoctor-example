@@ -7,7 +7,6 @@ repositories {
     jcenter()
 }
 
-
 configurations {
     create("asciidoctor")
 }
@@ -40,13 +39,17 @@ asciidoctor {
                 'highlightjs-theme' : 'hl-dark-mode-aware', // try other themes at https://highlightjs.org/static/demo/
                 'stylesheet'        : 'dark-mode-aware.css',
 
-                // to declare in subtree's adoc files
-                // https://github.com/asciidoctor/asciidoctor-gradle-plugin/issues/292
-//                'highlightjsdir'    : '{gradle-relative-srcdir}/highlight',
-//                'stylesdir'         : '{gradle-relative-srcdir}',
+                // Currently the `gradle-relative-srcdir` is not replaced when it is declared in the
+                // attributes section of the asciidoctor plugin, so every attributes that rely
+                // on `gradle-relative-srcdir` must be declares in each subtree's asciidoc files.
+                //
+                // https://github.com/asciidoctor/asciidoctor-gradle-plugin/issues/455
+                //
+                // 'highlightjsdir'    : '{gradle-relative-srcdir}/highlight',
+                // 'stylesdir'         : '{gradle-relative-srcdir}',
 
                 'linkcss'           : 'true',
-//                'copycss'           : 'true',
+                // 'copycss'           : 'true',
                 'encoding'          : 'utf-8'
         ]
         attributeProvider {
