@@ -1,0 +1,60 @@
+:doctype: book
+:idprefix:
+:source-highlighter: highlight.js
+:highlightjsdir: {gradle-relative-srcdir}/js/highlight
+:stylesdir: {gradle-relative-srcdir}/
+:icons: font
+:description: A demo of Asciidoctor docbook with tocbot.
+:toc: left
+:toclevels: 5
+:sectlinks:
+:sectanchors:
+:docinfo:  
+:nofooter:
+
+
+= Title
+
+== H1
+
+lorem ipsum
+
+=== H2a
+
+lorem ipsum
+
+==== H3a
+
+lorem ipsum
+
+===== H4
+
+lorem ipsum
+
+====== H5a
+
+lorem ipsum
+
+====== H5b
+
+lorem ipsum
+
+====== H5c
+
+lorem ipsum
+
+====== H5d
+
+lorem ipsum
+
+==== H3b
+
+lorem ipsum
+
+=== H2b
+
+lorem ipsum
+
+==== H3a
+
+lorem ipsum

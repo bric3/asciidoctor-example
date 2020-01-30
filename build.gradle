@@ -74,6 +74,7 @@ asciidoctor {
     sources {
         include 'plantuml-test.adoc'
         include 'demo.adoc'
+        include 'docbook-with-dynamic-toc.adoc'
         include 'nested/*.adoc'
     }
     baseDirFollowsSourceDir()
