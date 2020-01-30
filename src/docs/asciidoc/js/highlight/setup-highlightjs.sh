@@ -80,3 +80,6 @@ for css in "${styles[@]}"; do mv "$css" "./styles/$(basename "$css" .css).min.cs
 rm -rf highlight_tmp
 rm -rf highlight.zip
 
+curl https://raw.githubusercontent.com/highlightjs/highlightjs-terraform/master/terraform.js \
+  --output terraform.js \
+  --silent

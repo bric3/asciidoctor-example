@@ -30,7 +30,7 @@ asciidoctor {
         modules.diagram.version project.asciidoctorjDiagramVersion
         options doctype: 'book', ruby: 'erubis'
         attributes = [
-                'docinfodir': 'docinfos',
+                'docinfodir'        : 'docinfos',
 
                 /*
                  https://asciidoctor.org/docs/user-manual/#highlight-js
@@ -84,6 +84,7 @@ asciidoctor {
     baseDirFollowsSourceDir()
 
     inputs.files("${sourceDir}/*.css")
+    inputs.dir("${sourceDir}/docinfos")
     inputs.dir("${sourceDir}/js")
 
     configurations("asciidoctor")

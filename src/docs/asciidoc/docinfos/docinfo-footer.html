@@ -1,0 +1,10 @@
+<script src="{highlightjsdir}/terraform.js"></script>
+<script type="text/javascript">
+    hljs.registerLanguage('terraform', window.hljsDefineTerraform);
+    // hljs.initHighlighting(); can be run only once, and this instruction is
+    // inserted before the doc-info-footer
+
+    document.querySelectorAll('pre code').forEach((block) => {
+        hljs.highlightBlock(block);
+    });
+</script>

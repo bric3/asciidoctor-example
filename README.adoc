@@ -30,6 +30,7 @@ Links and discussion that helped me
 - https://github.com/asciidoctor/asciidoctor/issues/699[collapsible toc]
 - https://mrhaki.blogspot.com/2019/03/awesome-asciidoctor-collapsible-content.html[Collapsible content (asciidoctor 2, need gradle plugin 3.x)]
 - no wrapping
+- https://github.com/asciidoctor/asciidoctor/issues/2476#issuecomment-579822948[Support non regular highlight.js languages]
 
 .git repository
 - https://github.com/asciidoctor/asciidoctor-gradle-plugin
