@@ -29,14 +29,16 @@ asciidoctor {
         modules.diagram.version project.asciidocorjDiagramVersion
         options doctype: 'book'
         attributes = [
-                // https://asciidoctor.org/docs/user-manual/#highlight-js
-                // cd src/docs/asciidoc
-                // curl 'https://highlightjs.org/download/' -o highlight.zip .....
-                // unzip -d highlight highlight.zip
-                // mv highlight/highlight.pack.js highlight/highlight.min.js
-                // for css in highlight/style/*.css; do mv $css highlight/style/$(basename "$css" .css).min.css; done
+                /*
+                 https://asciidoctor.org/docs/user-manual/#highlight-js
+                 cd src/docs/asciidoc
+                 curl 'https://highlightjs.org/download/' -o highlight.zip .....
+                 unzip -d highlight highlight.zip
+                 mv highlight/highlight.pack.js highlight/highlight.min.js
+                 for css in highlight/styles/*.css; do mv $css highlight/styles/$(basename "$css" .css).min.css; done
+                */
                 'source-highlighter': 'highlight.js',
-                'highlightjs-theme' : 'hl-dark-mode-aware', // try other themes at https://highlightjs.org/static/demo/
+                'highlightjs-theme' : 'hl-dark-mode-aware',
                 'stylesheet'        : 'dark-mode-aware.css',
 
                 // Currently the `gradle-relative-srcdir` is not replaced when it is declared in the
@@ -65,7 +67,7 @@ asciidoctor {
         from(sourceDir) {
             include 'images/**'
             include '*.css'
-            include 'highlight/**'
+            include 'js/**'
         }
     }
 
@@ -76,13 +78,13 @@ asciidoctor {
     }
     baseDirFollowsSourceDir()
 
-    inputs.files("${sourceDir}/asciidark.css")
-    inputs.dir("${sourceDir}/highlight")
+    inputs.files("${sourceDir}/*.css")
+    inputs.dir("${sourceDir}/js")
 
     configurations("asciidoctor")
 
 //    outputs.upToDateWhen { false } // enforce asciidoc processing
-    if(JavaVersion.current().isJava9Compatible()){
+    if (JavaVersion.current().isJava9Compatible()) {
         forkOptions {
             jvmArgs(
                     '--illegal-access=permit', // explicit permit, still logs warning on stdout

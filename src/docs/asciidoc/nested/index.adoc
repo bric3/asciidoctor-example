@@ -8,7 +8,7 @@ Note the ending slashes,
 - ending slash on `stylesdir` because asciidoctor does not appends a slash,
 which results in not finding the css.
 ////
-:highlightjsdir: {gradle-relative-srcdir}/highlight
+:highlightjsdir: {gradle-relative-srcdir}/js/highlight
 :stylesdir: {gradle-relative-srcdir}/
 :toc: preamble
 :docinfo:

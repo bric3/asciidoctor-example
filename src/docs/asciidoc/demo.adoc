@@ -1,7 +1,7 @@
 :doctype: book
 :idprefix:
 :source-highlighter: highlight.js
-:highlightjsdir: {gradle-relative-srcdir}/highlight
+:highlightjsdir: {gradle-relative-srcdir}/js/highlight
 :stylesdir: {gradle-relative-srcdir}/
 :library: asciidodoctor
 :icons: font
