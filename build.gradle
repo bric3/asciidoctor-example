@@ -30,6 +30,8 @@ asciidoctor {
         modules.diagram.version project.asciidoctorjDiagramVersion
         options doctype: 'book', ruby: 'erubis'
         attributes = [
+                'docinfodir': 'docinfos',
+
                 /*
                  https://asciidoctor.org/docs/user-manual/#highlight-js
                  cd src/docs/asciidoc
