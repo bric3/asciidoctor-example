@@ -8,7 +8,7 @@ repositories {
 }
 
 configurations {
-    create("asciidoctor")
+    create("asciidoctorExtensions")
 }
 
 ext {
@@ -18,6 +18,7 @@ ext {
 dependencies {
     // TODO demo spring-restdocs
 //    asciidoctor "org.springframework.restdocs:spring-restdocs-asciidoctor"
+    asciidoctorExtensions project(':extensions')
 }
 
 asciidoctor {
@@ -40,7 +41,7 @@ asciidoctor {
                  mv highlight/highlight.pack.js highlight/highlight.min.js
                  for css in highlight/styles/*.css; do mv $css highlight/styles/$(basename "$css" .css).min.css; done
                 */
-                'source-highlighter': 'highlight.js',
+                'source-highlighter': 'highlightjs',
                 'highlightjs-theme' : 'hl-dark-mode-aware',
                 'stylesheet'        : 'dark-mode-aware.css',
 
@@ -78,6 +79,7 @@ asciidoctor {
     sources {
         include 'plantuml-test.adoc'
         include 'demo.adoc'
+        include 'demo-macro.adoc'
         include 'docbook-with-dynamic-toc.adoc'
         include 'nested/*.adoc'
     }
@@ -87,7 +89,7 @@ asciidoctor {
     inputs.dir("${sourceDir}/docinfos")
     inputs.dir("${sourceDir}/js")
 
-    configurations("asciidoctor")
+    configurations("asciidoctorExtensions")
 
 //    outputs.upToDateWhen { false } // enforce asciidoc processing
     if (JavaVersion.current().isJava9Compatible()) {

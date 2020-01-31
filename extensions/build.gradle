@@ -1,0 +1,13 @@
+// https://asciidoctor.github.io/asciidoctor-gradle-plugin/development-3.x/user-guide/#_as_project_dependency
+
+plugins {
+    id 'java'
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    implementation("org.asciidoctor:asciidoctorj:2.2.0")
+}

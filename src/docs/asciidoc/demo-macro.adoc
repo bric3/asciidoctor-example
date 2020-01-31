@@ -1,0 +1,66 @@
+:icons: font
+:source-highlighter: highlightjs
+:highlightjsdir: {gradle-relative-srcdir}/js/highlight/
+:stylesdir: {gradle-relative-srcdir}/
+
+
+
+.java
+[source,java]
+----
+public class HighlightJsHighlighter implements SyntaxHighlighterAdapter {
+
+    @Override
+    public boolean hasDocInfo(LocationType location) {
+        return location == LocationType.FOOTER;
+    }
+
+    @Override
+    public String getDocinfo(LocationType location, Document document, Map<String, Object> options) {
+        String highlightjsDir = ensureTrailingSlash(document.getAttribute("highlightjsdir").toString());
+        Object theme = document.getAttribute("highlightjs-theme");
+        return "<link rel=\"stylesheet\" href=\"" + highlightjsDir + "/styles/" + theme + ".min.css\">\n" +
+                "<script src=\"" + highlightjsDir + "highlight.min.js\"></script>\n" +
+                "<script src=\"" + highlightjsDir + "terraform.js\"></script>\n" +
+                "<script>hljs.registerLanguage('terraform', window.hljsDefineTerraform);hljs.initHighlighting();</script>";
+    }
+
+    private String ensureTrailingSlash(String highlightjsDir) {
+        return highlightjsDir.endsWith("/") ? highlightjsDir : highlightjsDir + "/";
+    }
+}
+----
+
+.Route 53 DNS resources
+[source,terraform,highlight=7-9;18-29]
+----
+resource "aws_route53_record" "www_example_com_a" {
+  zone_id = module.example_com.zone_id
+  name    = "www.example.com."
+  type    = "A"
+  ttl     = "300"
+
+  weighted_routing_policy {
+    weight = 90 <1>
+  }
+
+  records = [ <2>
+    "100.100.100.101",
+    "100.100.100.102",
+    "100.100.100.103",
+  ]
+}
+
+resource "aws_route53_record" "www_example_com_on_gke_a" {
+  zone_id = module.example_com.zone_id
+  name    = "www.example.com."
+  type    = "A"
+  ttl     = "300"
+
+  weighted_routing_policy {
+    weight = 10 <3>
+  }
+
+  records = [lookup(local.ips.public_addresses, "gke-${local.ips.cluster_name}-public-ingress")] <4>
+}
+----
