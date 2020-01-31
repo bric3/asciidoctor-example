@@ -12,5 +12,9 @@ public class AsciidoctorExampleExtension implements ExtensionRegistry {
     syntaxHighlighterRegistry.register(HighlightJsHighlighter.class,
             "highlightjs",
             "highlight.js");
+
+    JavaExtensionRegistry javaExtensionRegistry = asciidoctor.javaExtensionRegistry();
+    javaExtensionRegistry.blockMacro(GistBlockMacroProcessor.class);
+    javaExtensionRegistry.inlineMacro(IssueInlineMacroProcessor.class);
   }
 }

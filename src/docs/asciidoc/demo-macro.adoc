@@ -3,6 +3,20 @@
 :highlightjsdir: {gradle-relative-srcdir}/js/highlight/
 :stylesdir: {gradle-relative-srcdir}/
 
+= Macros
+
+gist::bric3/17d1397327f510b27f0789b71ee312dc[]
+
+issue:asciidoctor/asciidoctor#2476[]
+
+:repo: asciidoctor/asciidoctor
+
+issue:#2476[]
+
+issue:#2476[comment=issuecomment-580196441]
+
+
+
 
 
 .java
